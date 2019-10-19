@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_action_bar"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?actionBarSize" android:layout_gravity="center"
+    android:background="@color/menuItemNotSelected"
+    android:baselineAligned="false"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:weightSum = "6">
+
+    <LinearLayout
+        android:id="@+id/menu_item_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:background="@color/menuItemSelected"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_friends" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/friends"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_item_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/messages"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_item_map_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_map_pin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/map"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_item_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_favorite_full" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/favorites"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_item_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_notification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/notifications"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_item_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:clickable="false"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/profile"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llOstalo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imvLogo"
+                android:layout_width="294dp"
+                android:layout_height="81dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_logo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="share your favorite places!"
+                app:layout_constraintEnd_toEndOf="@+id/imvLogo"
+                app:layout_constraintStart_toStartOf="@+id/imvLogo"
+                app:layout_constraintTop_toBottomOf="@+id/imvLogo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOstalo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llLogo"
+        app:layout_constraintVertical_bias="0.45">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="@+id/edtEmail"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp"
+                android:background="@color/btnFocusBlue"
+                android:text="@string/btnSignUp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/btnLogIn"
+                app:layout_constraintTop_toTopOf="@+id/btnLogIn" />
+
+            <Button
+                android:id="@+id/btnLogIn"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/btnFocusBlue"
+                android:text="@string/btnLogIn"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/edtPassword"
+                app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+            <Button
+                android:id="@+id/btnGoogleLog"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_g_plus"
+                android:drawablePadding="4dp"
+                android:text="@string/btnGoogleLog"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/btnFacebookLog"
+                app:layout_constraintTop_toBottomOf="@+id/btnFacebookLog" />
+
+            <Button
+                android:id="@+id/btnFacebookLog"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:drawableLeft="@drawable/ic_facebook_f_only"
+                android:drawablePadding="4dp"
+                android:text="@string/btnFacebookLog"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

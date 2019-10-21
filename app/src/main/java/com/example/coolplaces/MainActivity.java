@@ -1,23 +1,38 @@
 package com.example.coolplaces;
 
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.View;
-import android.view.MenuItem;
-import android.widget.Toast;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_log_in);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        ToolBarController.init(this.getApplicationContext(),toolbar);
+        //events
+        Button btnLogIn = findViewById(R.id.btnLogIn);
+        Button btnSignUp = findViewById(R.id.btnSignUp);
+
+        btnLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ActivityFriends.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ActivitySignUp.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
 
 

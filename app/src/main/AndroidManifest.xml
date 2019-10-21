@@ -19,6 +19,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivitySignUp"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityFriends"
+            android:label="Friends"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityMessages"
+            android:label="Messages"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityMap"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityFavorites"
+            android:label="Favorites"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityNotification"
+            android:label="Notification"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityProfile"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

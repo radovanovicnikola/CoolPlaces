@@ -1,0 +1,17 @@
+package com.example.coolplaces;
+
+import android.os.Bundle;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ActivityMessages extends AppCompatActivity {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_messages);
+        setSupportActionBar(ToolBarController.getInstance().getToolbar());
+
+        ToolBarController.getInstance().setContext(this);
+    }
+}

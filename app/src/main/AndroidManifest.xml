@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivityMenuPlaceholder"
+            android:label="Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ActivitySignUp"
             android:label="Sign Up"
             android:theme="@style/AppTheme.NoActionBar"/>

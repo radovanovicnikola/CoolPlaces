@@ -20,6 +20,7 @@ public class AdapterMessages extends BaseAdapter {
         this.messageList = messageList;
         this.inflater = LayoutInflater.from(ctx);
     }
+
     @Override
     public int getCount() {
         return messageList.size();

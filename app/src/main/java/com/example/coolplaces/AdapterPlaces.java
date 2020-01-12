@@ -15,7 +15,7 @@ public class AdapterPlaces extends BaseAdapter {
     private List<SimplePlaceData> simplePlaceData;
     private LayoutInflater inflater;
 
-    public AdapterPlaces(Context ctx, List<SimplePlaceData> placeDataList){
+    public AdapterPlaces(Context ctx, List<SimplePlaceData> simplePlaceData){
         this.ctx=ctx;
         this.simplePlaceData = simplePlaceData;
         this.inflater = LayoutInflater.from(ctx);
@@ -43,8 +43,8 @@ public class AdapterPlaces extends BaseAdapter {
         txtContent.setText(placeData.getDescription());
         ImageView img = viewPlaceItem.findViewById(R.id.imgProfile);
         img.setImageBitmap(placeData.getPicture());
-        TextView viewName = viewPlaceItem.findViewById(R.id.txtName);
-        viewName.setText(placeData.getName());
+        TextView viewTxtPlace = viewPlaceItem.findViewById(R.id.txtPlace);
+        viewTxtPlace.setText(placeData.getName());
 
         return viewPlaceItem;
     }

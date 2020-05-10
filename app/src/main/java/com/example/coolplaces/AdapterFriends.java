@@ -12,10 +12,10 @@ import java.util.List;
 
 public class AdapterFriends extends BaseAdapter {
     private Context ctx;
-    private List<SimpleUserData> userList;
+    private List<UserData> userList;
     private LayoutInflater inflater;
 
-    public AdapterFriends(Context ctx,List<SimpleUserData> userList){
+    public AdapterFriends(Context ctx,List<UserData> userList){
         this.ctx=ctx;
         this.userList=userList;
         this.inflater = LayoutInflater.from(ctx);
@@ -37,12 +37,12 @@ public class AdapterFriends extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        SimpleUserData userData = userList.get(i);
+        UserData userData = userList.get(i);
         View viewItemFriend = inflater.inflate(R.layout.item_friend_list,null);
         TextView txtName = viewItemFriend.findViewById(R.id.txtName);
         txtName.setText(userData.getFirstName()+" "+userData.getLastName());
         ImageView imgProfile = viewItemFriend.findViewById(R.id.imgProfile);
-        imgProfile.setImageBitmap(userData.getProfilePicture());
+        imgProfile.setImageBitmap(userData.getProfilePictureBitmap());
 
         return viewItemFriend;
     }

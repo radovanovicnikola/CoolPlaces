@@ -24,10 +24,10 @@ public class FragmentFriends extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         //super.onViewCreated(view, savedInstanceState);
-        SimpleUserData simpleUserData = new SimpleUserData(BitmapFactory.decodeResource(getResources(),R.drawable.img_profile_example),"Tamara","Jovanovic");
-        ArrayList<SimpleUserData> listUsers = new ArrayList<SimpleUserData>();
+        UserData simpleUserData = new UserData(BitmapFactory.decodeResource(getResources(),R.drawable.img_profile_example),"tamaraJo","Tamara","Jovanovic","066321231","tamarojo@gmail.com");
+        ArrayList<UserData> listUsers = new ArrayList<UserData>();
         for(int i=0;i<5;i++) {
-            listUsers.add(new SimpleUserData(simpleUserData));
+            listUsers.add(new UserData(simpleUserData));
         }
         AdapterFriends af = new AdapterFriends(getActivity(),listUsers);
         GridView viewUsers = view.findViewById(R.id.grid);

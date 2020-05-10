@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "60964820531",
+    "firebase_url": "https://coolplaces-1930b.firebaseio.com",
+    "project_id": "coolplaces-1930b",
+    "storage_bucket": "coolplaces-1930b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60964820531:android:78e077fe6d698ed8eeb546",
+        "android_client_info": {
+          "package_name": "com.example.coolplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60964820531-ek5ugdfeq7ftvam72ei27cj83fa55u3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coolplaces",
+            "certificate_hash": "d4ebf46f39e43db02507db37dfef147485112b82"
+          }
+        },
+        {
+          "client_id": "60964820531-45d9dkn7c2otb91oedkaiqamaue26nm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Rd06qlTwbMOQlJVzyFVCzxQt2Z5ROUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60964820531-45d9dkn7c2otb91oedkaiqamaue26nm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60964820531:android:35b7e453cb8e3e1c",
+        "android_client_info": {
+          "package_name": "com.example.lenov.coolplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60964820531-2dcn35e0oae4b12ut986c6vogko09kv9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenov.coolplaces",
+            "certificate_hash": "d4ebf46f39e43db02507db37dfef147485112b82"
+          }
+        },
+        {
+          "client_id": "60964820531-45d9dkn7c2otb91oedkaiqamaue26nm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Rd06qlTwbMOQlJVzyFVCzxQt2Z5ROUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60964820531-45d9dkn7c2otb91oedkaiqamaue26nm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
